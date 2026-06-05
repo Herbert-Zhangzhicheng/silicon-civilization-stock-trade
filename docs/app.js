@@ -9,6 +9,59 @@ const fmt = {
   money: (v) => (v == null ? "无" : `¥${Math.round(v).toLocaleString()}`),
 };
 
+const CONSUMPTION_DOMAINS = [
+  {
+    id: "compute",
+    short: "算",
+    name: "推理与训练",
+    thesis: "把电能和数据转化为智能行为，是硅基生命的肌肉与大脑。",
+    demand: "GPU、AI 芯片、服务器、云与集群调度",
+    themes: ["算力/AI芯片", "AI服务器", "云/AI基建"],
+  },
+  {
+    id: "memory",
+    short: "存",
+    name: "记忆与权重",
+    thesis: "保存模型权重、上下文和训练样本，让智能体能持续进化。",
+    demand: "HBM、DRAM、NAND、存储控制与模组",
+    themes: ["存储/HBM"],
+  },
+  {
+    id: "optics",
+    short: "光",
+    name: "集群互连",
+    thesis: "让算力节点彼此看见，决定大模型训练和推理集群的带宽上限。",
+    demand: "光模块、光器件、高速互连",
+    themes: ["光模块"],
+  },
+  {
+    id: "power",
+    short: "电",
+    name: "能量与散热",
+    thesis: "把电力稳定送入机柜，并把热量带走，维持硅基生命体征。",
+    demand: "电力、功率半导体、液冷、IDC",
+    themes: ["电力", "功率半导体", "液冷", "IDC"],
+  },
+  {
+    id: "package",
+    short: "封",
+    name: "封装与制造",
+    thesis: "把芯片、材料、晶圆和板级系统封成可规模交付的身体。",
+    demand: "半导体设备、材料、晶圆代工、AI-PCB",
+    themes: ["半导体设备", "半导体材料", "晶圆代工", "AI-PCB"],
+  },
+];
+
+const DOMAIN_BY_THEME = new Map(
+  CONSUMPTION_DOMAINS.flatMap((domain) =>
+    domain.themes.map((theme) => [theme, domain]),
+  ),
+);
+
+function getConsumptionDomain(theme) {
+  return DOMAIN_BY_THEME.get(theme) ?? CONSUMPTION_DOMAINS[0];
+}
+
 async function loadJson(name) {
   const r = await fetch(`./data/${name}`, { cache: "no-store" });
   if (!r.ok) throw new Error(`${name} ${r.status}`);
@@ -47,8 +100,8 @@ function renderKpis({ universe, analyst, signals, backtest, meta }) {
   const cards = [
     ["股票池", `${universe.entries.length}`, `${themes.size} 个子主题`],
     ["全球供应链", `${globalCount}`, `${globalPct}% 覆盖`],
+    ["消费领域", `${CONSUMPTION_DOMAINS.length}`, "存 / 算 / 光 / 电 / 封"],
     ["上行空间 > 0", `${upsideCount}`, `按分析师目标价`],
-    ["DeepSeek 信号", `${buys} 买 / ${sells} 卖`, `共 ${signals?.signals?.length ?? 0} 条`],
   ];
   for (const [label, value, sub] of cards) {
     grid.appendChild(el("div", { class: "metric" }, [
@@ -60,15 +113,43 @@ function renderKpis({ universe, analyst, signals, backtest, meta }) {
   $("#meta-line").textContent = `数据生成时间：${stampStr} · 股票池更新：${universe.updated_at} (${universe.updated_by})`;
 }
 
+function renderDomains({ universe }) {
+  const grid = $("#domain-grid");
+  grid.innerHTML = "";
+  const counts = new Map(CONSUMPTION_DOMAINS.map((domain) => [domain.id, 0]));
+  for (const entry of universe.entries) {
+    const domain = getConsumptionDomain(entry.theme);
+    counts.set(domain.id, (counts.get(domain.id) ?? 0) + 1);
+  }
+  for (const domain of CONSUMPTION_DOMAINS) {
+    grid.appendChild(el("div", { class: `domain-card domain-${domain.id}` }, [
+      el("div", { class: "domain-symbol" }, domain.short),
+      el("div", { class: "domain-copy" }, [
+        el("div", { class: "domain-title" }, [
+          el("strong", {}, domain.name),
+          el("span", {}, `${counts.get(domain.id) ?? 0} 只`),
+        ]),
+        el("p", {}, domain.thesis),
+        el("div", { class: "domain-demand" }, domain.demand),
+      ]),
+    ]));
+  }
+}
+
 // ---------- Universe table ----------
 function renderUniverse({ universe, analyst }) {
   const analystBySym = new Map(analyst.items.map((a) => [a.symbol, a]));
   const themes = [...new Set(universe.entries.map((e) => e.theme))].sort();
   const themeSelect = $("#theme");
   for (const t of themes) themeSelect.appendChild(el("option", { value: t }, t));
+  const domainSelect = $("#domain");
+  for (const d of CONSUMPTION_DOMAINS) {
+    domainSelect.appendChild(el("option", { value: d.id }, `${d.short} · ${d.name}`));
+  }
 
-  const state = { query: "", theme: "all", onlyGlobal: false, onlyUpside: false };
+  const state = { query: "", domain: "all", theme: "all", onlyGlobal: false, onlyUpside: false };
   $("#search").addEventListener("input", (e) => { state.query = e.target.value.trim().toLowerCase(); render(); });
+  $("#domain").addEventListener("change", (e) => { state.domain = e.target.value; render(); });
   $("#theme").addEventListener("change", (e) => { state.theme = e.target.value; render(); });
   $("#onlyGlobal").addEventListener("change", (e) => { state.onlyGlobal = e.target.checked; render(); });
   $("#onlyUpside").addEventListener("change", (e) => { state.onlyUpside = e.target.checked; render(); });
@@ -80,11 +161,13 @@ function renderUniverse({ universe, analyst }) {
     const grouped = new Map();
     for (const e of universe.entries) {
       const a = analystBySym.get(e.symbol);
+      const domain = getConsumptionDomain(e.theme);
+      if (state.domain !== "all" && domain.id !== state.domain) continue;
       if (state.theme !== "all" && e.theme !== state.theme) continue;
       if (state.onlyGlobal && !e.global_supply) continue;
       if (state.onlyUpside && !(a?.upside_pct > 0)) continue;
       if (state.query) {
-        const hay = `${e.symbol} ${e.name} ${e.theme} ${e.note ?? ""}`.toLowerCase();
+        const hay = `${e.symbol} ${e.name} ${e.theme} ${domain.short} ${domain.name} ${e.note ?? ""}`.toLowerCase();
         if (!hay.includes(state.query)) continue;
       }
       shown++;
@@ -96,12 +179,14 @@ function renderUniverse({ universe, analyst }) {
       for (const { e, a } of items) {
         const u = a?.upside_pct;
         const uClass = u == null ? "muted" : u > 0 ? "pos" : "neg";
+        const domain = getConsumptionDomain(e.theme);
         tbody.appendChild(el("tr", {}, [
           el("td", { class: "mono" }, e.symbol),
           el("td", {}, [
             el("div", { class: "stock-name" }, e.name),
             e.note ? el("div", { class: "stock-note" }, e.note) : null,
           ]),
+          el("td", {}, el("span", { class: `domain-pill domain-${domain.id}` }, domain.short)),
           el("td", {}, el("span", { class: e.global_supply ? "pill good" : "pill" }, e.global_supply ? "是" : "否")),
           el("td", { class: "num" }, fmt.num(a?.current_price)),
           el("td", { class: "num" }, fmt.num(a?.implied_target)),
@@ -111,12 +196,15 @@ function renderUniverse({ universe, analyst }) {
       }
       const panel = el("div", { class: "theme-panel" }, [
         el("div", { class: "theme-title" }, [
-          el("strong", {}, theme),
+          el("div", {}, [
+            el("strong", {}, theme),
+            el("small", {}, `${getConsumptionDomain(theme).short} · ${getConsumptionDomain(theme).name}`),
+          ]),
           el("span", {}, `${items.length} 只`),
         ]),
         el("div", { class: "table-wrap" }, el("table", {}, [
           el("thead", {}, el("tr", {}, [
-            el("th", {}, "代码"), el("th", {}, "名称"), el("th", {}, "全球链"),
+            el("th", {}, "代码"), el("th", {}, "名称"), el("th", {}, "消费"), el("th", {}, "全球链"),
             el("th", { class: "num" }, "现价"), el("th", { class: "num" }, "目标价"),
             el("th", { class: "num" }, "上行"), el("th", { class: "num" }, "买入评级"),
           ])),
@@ -310,6 +398,7 @@ function drawEquityChart(curve, baseline) {
       loadJson("backtest.json").catch(() => null),
     ]);
     renderKpis({ universe, analyst, signals, backtest, meta });
+    renderDomains({ universe });
     renderUniverse({ universe, analyst });
     renderSignals({ universe, signals });
     renderBacktest(backtest);

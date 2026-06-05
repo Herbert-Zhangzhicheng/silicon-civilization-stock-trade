@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>硅基文明消费股 · 静态快照</title>
-  <meta name="description" content="硅基文明消费股交易系统静态快照：跟踪算力芯片、光模块、AI 服务器、液冷、电力、IDC、半导体材料与 AI-PCB 等 A 股标的。" />
+  <title>硅基生命消费链研究页</title>
+  <meta name="description" content="从硅基生命的视角研究 A 股存、算、光、电、封供应链：记忆、推理训练、集群互连、能量散热与封装制造。" />
   <link rel="canonical" href="https://madeye.github.io/silicon-civilization-stock-trade/" />
   <link rel="icon" href="./icon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="硅基文明消费股交易系统" />
-  <meta property="og:title" content="硅基文明消费股 · 静态快照" />
-  <meta property="og:description" content="DeepSeek、Tushare 与 AkShare 驱动的 A 股主题股票池、目标价、信号与回测快照。" />
+  <meta property="og:title" content="硅基生命消费链研究页" />
+  <meta property="og:description" content="用存、算、光、电、封五个消费领域拆解硅基生命持续运行和扩张所需的 A 股供应链。" />
   <meta property="og:url" content="https://madeye.github.io/silicon-civilization-stock-trade/" />
   <meta property="og:image" content="https://madeye.github.io/silicon-civilization-stock-trade/social-card.png" />
   <meta property="og:image:alt" content="硅基文明消费股交易系统社交分享卡片" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="硅基文明消费股 · 静态快照" />
-  <meta name="twitter:description" content="A 股硅基文明消费主题股票池、分析师目标价、DeepSeek 信号与策略回测。" />
+  <meta name="twitter:title" content="硅基生命消费链研究页" />
+  <meta name="twitter:description" content="A 股存算光电封供应链、分析师目标价、DeepSeek 信号与策略回测。" />
   <meta name="twitter:image" content="https://madeye.github.io/silicon-civilization-stock-trade/social-card.png" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -28,15 +28,20 @@
   <div class="container">
     <header class="page-header">
       <div>
-        <div class="eyebrow">DeepSeek · Tushare · A股股票池 · 静态快照</div>
-        <h1>硅基文明消费股交易系统</h1>
+        <div class="eyebrow">DeepSeek · Tushare · 存算光电封 · 公开研究页</div>
+        <h1>硅基生命消费链</h1>
         <p>
-          算力芯片、光模块、AI 服务器、液冷、电力、IDC、半导体材料、AI-PCB 等"喂养"硅基文明的卖铲人。
-          本页面是 Next.js 应用的静态快照，数据来自 <code>web/scripts/snapshot.ts</code> 的最新一次输出。
+          这里的“消费”不是人类购买 AI 产品，而是假设硅基生命持续运行、扩张和迭代时，
+          会反复消耗记忆、计算、互连、能量和封装制造能力。
+        </p>
+        <p>
+          页面以 A 股供应链为研究样本，把股票池映射为 <strong>存、算、光、电、封</strong> 五类资源，
+          并保留分析师目标价、DeepSeek 信号与策略回测作为观察工具。
         </p>
         <p class="muted" id="meta-line">加载中…</p>
       </div>
       <nav class="header-actions">
+        <a class="button secondary" href="#ledger">消费账本</a>
         <a class="button secondary" href="#universe">股票池</a>
         <a class="button secondary" href="#signals">实时信号</a>
         <a class="button secondary" href="#backtest">回测</a>
@@ -45,12 +50,24 @@
 
     <div class="summary-grid" id="kpi-grid"></div>
 
+    <section class="research-panel" id="ledger">
+      <div>
+        <h2>硅基生命消费账本</h2>
+        <p class="muted">把 AI 基础设施看成一个生命体的代谢系统：存储保存记忆，算力执行意志，光互连传递神经信号，电力和散热维持体征，封装制造把身体规模化交付。</p>
+      </div>
+      <div class="domain-grid" id="domain-grid"></div>
+    </section>
+
     <h2 class="subheading" id="universe">股票池</h2>
-    <p class="muted">分主题排列，含分析师目标价、上行空间、买入评级数。</p>
+    <p class="muted">按硅基生命消费领域与产业主题排列，含分析师目标价、上行空间、买入评级数。</p>
     <div class="toolbar">
       <div class="field">
         <span>搜索</span>
-        <input id="search" placeholder="代码、名称、主题" />
+        <input id="search" placeholder="代码、名称、主题、消费领域" />
+      </div>
+      <div class="field field-sm">
+        <span>消费领域</span>
+        <select id="domain"><option value="all">全部领域</option></select>
       </div>
       <div class="field">
         <span>主题</span>
@@ -88,7 +105,7 @@
 
     <footer class="muted" style="margin-top:32px;font-size:12px;line-height:1.6">
       源代码：<a href="https://github.com/madeye/silicon-civilization-stock-trade">github.com/madeye/silicon-civilization-stock-trade</a>。
-      本站点为静态快照，不构成任何投资建议。
+      本站点为公开研究页与静态快照，不构成任何投资建议。
     </footer>
   </div>
 

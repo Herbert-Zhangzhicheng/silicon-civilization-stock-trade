@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
+import { CONSUMPTION_DOMAINS, getConsumptionDomain, type ConsumptionDomainId } from "@/lib/consumption";
 import type { UniverseEntry } from "@/lib/universe";
 
 interface Analyst {
@@ -120,6 +121,7 @@ export default function UniverseTable({
   const [onlyUpside, setOnlyUpside] = useState(false);
   const [query, setQuery] = useState("");
   const [theme, setTheme] = useState("all");
+  const [domain, setDomain] = useState<ConsumptionDomainId | "all">("all");
   const [progress, setProgress] = useState(() => ({
     spotDone: initialSpots.length,
     analystDone: 0,
@@ -194,16 +196,18 @@ export default function UniverseTable({
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return rows.filter((r) => {
+      const consumption = getConsumptionDomain(r.theme);
       if (onlyGlobal && !r.global_supply) return false;
+      if (domain !== "all" && consumption.id !== domain) return false;
       if (theme !== "all" && r.theme !== theme) return false;
-      if (q && !`${r.symbol} ${r.name} ${r.theme} ${r.note ?? ""}`.toLowerCase().includes(q)) return false;
+      if (q && !`${r.symbol} ${r.name} ${r.theme} ${consumption.short} ${consumption.name} ${r.note ?? ""}`.toLowerCase().includes(q)) return false;
       if (onlyUpside) {
         const u = r.analyst?.upside_pct;
         if (u === undefined || u === null || u <= 0) return false;
       }
       return true;
     });
-  }, [rows, onlyGlobal, onlyUpside, query, theme]);
+  }, [rows, domain, onlyGlobal, onlyUpside, query, theme]);
 
   const priceCount = rows.filter((r) => r.analyst?.current_price != null).length;
   const ratedCount = rows.filter((r) => r.analyst?.buy_count != null && r.analyst?.total_count).length;
@@ -228,6 +232,15 @@ export default function UniverseTable({
             onChange={(e) => setQuery(e.target.value)}
             placeholder="代码、名称、主题"
           />
+        </div>
+        <div className="field field-sm">
+          <span>消费领域</span>
+          <select value={domain} onChange={(e) => setDomain(e.target.value as ConsumptionDomainId | "all")}>
+            <option value="all">全部领域</option>
+            {CONSUMPTION_DOMAINS.map((d) => (
+              <option key={d.id} value={d.id}>{d.short} · {d.name}</option>
+            ))}
+          </select>
         </div>
         <div className="field">
           <span>主题</span>
@@ -265,7 +278,10 @@ export default function UniverseTable({
         {Object.entries(grouped).map(([theme, items]) => (
           <div key={theme} className="theme-panel">
             <div className="theme-title">
-              <strong>{theme}</strong>
+              <div>
+                <strong>{theme}</strong>
+                <small>{getConsumptionDomain(theme).short} · {getConsumptionDomain(theme).name}</small>
+              </div>
               <span>{items.length} 只</span>
             </div>
             <div className="table-wrap">
@@ -274,6 +290,7 @@ export default function UniverseTable({
                   <tr>
                     <th>代码</th>
                     <th>名称</th>
+                    <th>消费</th>
                     <th>全球链</th>
                     <th className="num">现价</th>
                     <th className="num">目标价</th>
@@ -284,12 +301,18 @@ export default function UniverseTable({
                 <tbody>
                   {items.map((r) => {
                     const u = r.analyst?.upside_pct;
+                    const consumption = getConsumptionDomain(r.theme);
                     return (
                       <tr key={r.symbol}>
                         <td className="mono">{r.symbol}</td>
                         <td>
                           <div className="stock-name">{r.name}</div>
                           {r.note && <div className="stock-note">{r.note}</div>}
+                        </td>
+                        <td>
+                          <span className={`domain-pill domain-${consumption.id}`}>
+                            {consumption.short}
+                          </span>
                         </td>
                         <td>{r.global_supply ? <span className="pill good">是</span> : <span className="pill">否</span>}</td>
                         <td className="num">{r.analyst?.current_price?.toFixed(2) ?? (r.loading ? "…" : "无")}</td>
