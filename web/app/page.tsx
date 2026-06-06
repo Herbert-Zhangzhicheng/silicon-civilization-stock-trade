@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CONSUMPTION_DOMAINS, getConsumptionDomain } from "@/lib/consumption";
+import { CONSUMPTION_DOMAINS, LIFE_WORKFLOW, getConsumptionDomain, getConsumptionDomainById } from "@/lib/consumption";
 import { readUniverse } from "@/lib/universe";
 import RefreshUniverseButton from "./RefreshUniverseButton";
 import UniverseTable from "./UniverseTable";
@@ -11,23 +11,27 @@ export default function Home() {
   const entries = universe.entries;
   const globalCount = entries.filter((e) => e.global_supply).length;
   const themeCount = new Set(entries.map((e) => e.theme)).size;
-  const domainCounts = new Map(
-    CONSUMPTION_DOMAINS.map((domain) => [domain.id, 0]),
+  const domainStats = new Map(
+    CONSUMPTION_DOMAINS.map((domain) => [domain.id, { count: 0, themes: new Set<string>() }]),
   );
   for (const entry of entries) {
     const domain = getConsumptionDomain(entry.theme);
-    domainCounts.set(domain.id, (domainCounts.get(domain.id) ?? 0) + 1);
+    const stat = domainStats.get(domain.id);
+    if (stat) {
+      stat.count += 1;
+      stat.themes.add(entry.theme);
+    }
   }
 
   return (
     <div className="container">
       <header className="page-header">
         <div>
-          <div className="eyebrow">DeepSeek · Tushare · 存算光电封</div>
+          <div className="eyebrow">DeepSeek · Tushare · 硅基生命工作流</div>
           <h1>硅基生命消费股交易系统</h1>
           <p>
-            从硅基生命的视角，把 AI 基础设施拆成记忆、计算、互连、能量和封装制造五类长期消耗，
-            跟踪它们在 A 股供应链中的可交易标的。
+            把 AI 算力体视为一种会工作、会代谢、会扩张的硅基生命：它先保存状态，再计算行动，
+            通过光互连协同，用供电与散热维持体征，靠封装互连封成系统身体，再由制造链复制更多身体。
           </p>
         </div>
         <div className="header-actions">
@@ -62,24 +66,47 @@ export default function Home() {
       <section className="life-ledger" aria-labelledby="life-ledger-title">
         <div className="section-heading inline-heading">
           <div>
-            <h2 id="life-ledger-title">硅基生命消费账本</h2>
-            <p>不是人类消费 AI 产品，而是假设智能体持续运行、扩张和迭代时会反复购买的基础资源。</p>
+            <h2 id="life-ledger-title">硅基生命工作循环</h2>
+            <p>不是人类消费 AI 产品，而是智能体为了存在、协同和扩张而反复消耗底层资源。</p>
           </div>
         </div>
-        <div className="domain-grid">
-          {CONSUMPTION_DOMAINS.map((domain) => (
-            <div key={domain.id} className={`domain-card domain-${domain.id}`}>
-              <div className="domain-symbol">{domain.short}</div>
-              <div className="domain-copy">
-                <div className="domain-title">
-                  <strong>{domain.name}</strong>
-                  <span>{domainCounts.get(domain.id) ?? 0} 只</span>
-                </div>
-                <p>{domain.thesis}</p>
-                <div className="domain-demand">{domain.demand}</div>
+        <div className="work-grid">
+          {LIFE_WORKFLOW.map((stage) => {
+            const domain = getConsumptionDomainById(stage.domainId);
+            return (
+              <div key={stage.step} className={`work-card domain-${domain.id}`}>
+                <span className="work-step">{stage.step}</span>
+                <strong>{stage.title}</strong>
+                <p>{stage.description}</p>
+                <span className="work-domain">{domain.short} · {domain.verb}</span>
               </div>
-            </div>
-          ))}
+            );
+          })}
+        </div>
+        <div className="domain-grid">
+          {CONSUMPTION_DOMAINS.map((domain) => {
+            const stat = domainStats.get(domain.id);
+            return (
+              <div key={domain.id} className={`domain-card domain-${domain.id}`}>
+                <div className="domain-symbol">{domain.short}</div>
+                <div className="domain-copy">
+                  <div className="domain-title">
+                    <strong>{domain.name}</strong>
+                    <span>{stat?.count ?? 0} 只</span>
+                  </div>
+                  <p>{domain.thesis}</p>
+                  <div className="domain-line"><span>工作</span>{domain.work}</div>
+                  <div className="domain-line"><span>消费</span>{domain.consumes}</div>
+                  <div className="domain-line"><span>瓶颈</span>{domain.bottleneck}</div>
+                  <div className="theme-chips">
+                    {[...(stat?.themes ?? [])].map((theme) => (
+                      <span key={theme}>{theme}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

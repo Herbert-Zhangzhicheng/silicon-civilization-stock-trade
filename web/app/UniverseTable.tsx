@@ -200,7 +200,7 @@ export default function UniverseTable({
       if (onlyGlobal && !r.global_supply) return false;
       if (domain !== "all" && consumption.id !== domain) return false;
       if (theme !== "all" && r.theme !== theme) return false;
-      if (q && !`${r.symbol} ${r.name} ${r.theme} ${consumption.short} ${consumption.name} ${r.note ?? ""}`.toLowerCase().includes(q)) return false;
+      if (q && !`${r.symbol} ${r.name} ${r.theme} ${consumption.short} ${consumption.name} ${consumption.verb} ${consumption.work} ${r.note ?? ""}`.toLowerCase().includes(q)) return false;
       if (onlyUpside) {
         const u = r.analyst?.upside_pct;
         if (u === undefined || u === null || u <= 0) return false;
@@ -238,7 +238,7 @@ export default function UniverseTable({
           <select value={domain} onChange={(e) => setDomain(e.target.value as ConsumptionDomainId | "all")}>
             <option value="all">全部领域</option>
             {CONSUMPTION_DOMAINS.map((d) => (
-              <option key={d.id} value={d.id}>{d.short} · {d.name}</option>
+              <option key={d.id} value={d.id}>{d.short} · {d.verb}</option>
             ))}
           </select>
         </div>
@@ -280,7 +280,7 @@ export default function UniverseTable({
             <div className="theme-title">
               <div>
                 <strong>{theme}</strong>
-                <small>{getConsumptionDomain(theme).short} · {getConsumptionDomain(theme).name}</small>
+                <small>{getConsumptionDomain(theme).short} · {getConsumptionDomain(theme).verb}</small>
               </div>
               <span>{items.length} 只</span>
             </div>
