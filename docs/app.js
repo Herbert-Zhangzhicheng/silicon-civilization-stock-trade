@@ -2,6 +2,7 @@
 // No build step, no framework — just fetch + DOM.
 
 const $ = (sel) => document.querySelector(sel);
+const BUILD_REVISION = "2026-06-06-taxonomy-v2";
 const fmt = {
   num: (v, digits = 2) => (v == null || Number.isNaN(v) ? "无" : v.toFixed(digits)),
   pct: (v, digits = 1) => (v == null || Number.isNaN(v) ? "无" : `${v > 0 ? "+" : ""}${v.toFixed(digits)}%`),
@@ -138,7 +139,7 @@ function getConsumptionDomainById(id) {
 }
 
 async function loadJson(name) {
-  const r = await fetch(`./data/${name}`, { cache: "no-store" });
+  const r = await fetch(`./data/${name}?v=${BUILD_REVISION}`, { cache: "no-store" });
   if (!r.ok) throw new Error(`${name} ${r.status}`);
   return r.json();
 }
