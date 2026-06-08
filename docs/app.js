@@ -2,7 +2,7 @@
 // No build step, no framework — just fetch + DOM.
 
 const $ = (sel) => document.querySelector(sel);
-const BUILD_REVISION = "2026-06-06-taxonomy-v2";
+const BUILD_REVISION = "2026-06-08-boe-data-v3";
 const fmt = {
   num: (v, digits = 2) => (v == null || Number.isNaN(v) ? "无" : v.toFixed(digits)),
   pct: (v, digits = 1) => (v == null || Number.isNaN(v) ? "无" : `${v > 0 ? "+" : ""}${v.toFixed(digits)}%`),
@@ -186,7 +186,10 @@ function renderKpis({ universe, analyst, signals, backtest, meta }) {
       el("span", {}, sub),
     ]));
   }
-  $("#meta-line").textContent = `数据生成时间：${stampStr} · 股票池更新：${universe.updated_at} (${universe.updated_by})`;
+  const externalStatus = meta.external_data_status?.refresh_status
+    ? ` · 外部数据：${meta.external_data_status.refresh_status}`
+    : "";
+  $("#meta-line").textContent = `数据生成时间：${stampStr} · 股票池更新：${universe.updated_at} (${universe.updated_by})${externalStatus}`;
 }
 
 function renderDomains({ universe }) {

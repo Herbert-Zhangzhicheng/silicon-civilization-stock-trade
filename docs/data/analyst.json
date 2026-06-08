@@ -2,16 +2,6 @@
   "generated_at": "2026-05-30T02:20:51.094Z",
   "items": [
     {
-      "symbol": "688256",
-      "buy_count": 37,
-      "total_count": 40,
-      "buy_ratio": 0.925,
-      "consensus_eps_next": 8.51,
-      "implied_target": 1728.211,
-      "current_price": 1310,
-      "upside_pct": 31.92
-    },
-    {
       "symbol": "688041",
       "buy_count": 106,
       "total_count": 110,
@@ -22,44 +12,14 @@
       "upside_pct": 53.08
     },
     {
-      "symbol": "688047",
-      "buy_count": 9,
-      "total_count": 12,
-      "buy_ratio": 0.75,
-      "consensus_eps_next": 0.09,
-      "implied_target": 6250,
-      "current_price": 145.8,
-      "upside_pct": 4186.69
-    },
-    {
-      "symbol": "300474",
-      "buy_count": 3,
-      "total_count": 6,
-      "buy_ratio": 0.5,
-      "consensus_eps_next": 0.265,
-      "implied_target": 8050,
-      "current_price": 57.87,
-      "upside_pct": 13810.49
-    },
-    {
-      "symbol": "002049",
-      "buy_count": 107,
-      "total_count": 112,
-      "buy_ratio": 0.955,
-      "consensus_eps_next": 4.01,
-      "implied_target": 202.064,
-      "current_price": 79.3,
-      "upside_pct": 154.81
-    },
-    {
-      "symbol": "688385",
-      "buy_count": 38,
-      "total_count": 39,
-      "buy_ratio": 0.974,
-      "consensus_eps_next": 1.265,
-      "implied_target": 106.108,
-      "current_price": 60.41,
-      "upside_pct": 75.65
+      "symbol": "688256",
+      "buy_count": 37,
+      "total_count": 40,
+      "buy_ratio": 0.925,
+      "consensus_eps_next": 8.51,
+      "implied_target": 1728.211,
+      "current_price": 1310,
+      "upside_pct": 31.92
     },
     {
       "symbol": "300308",
@@ -92,16 +52,6 @@
       "upside_pct": 75.07
     },
     {
-      "symbol": "000988",
-      "buy_count": 59,
-      "total_count": 59,
-      "buy_ratio": 1,
-      "consensus_eps_next": 2.17,
-      "implied_target": 195.063,
-      "current_price": 151.92,
-      "upside_pct": 28.4
-    },
-    {
       "symbol": "002281",
       "buy_count": 97,
       "total_count": 112,
@@ -112,24 +62,36 @@
       "upside_pct": 40.54
     },
     {
-      "symbol": "603083",
-      "buy_count": 11,
-      "total_count": 12,
-      "buy_ratio": 0.917,
-      "consensus_eps_next": 2.52,
-      "implied_target": 389.97,
-      "current_price": 207.7,
-      "upside_pct": 87.76
+      "symbol": "000988",
+      "buy_count": 59,
+      "total_count": 59,
+      "buy_ratio": 1,
+      "consensus_eps_next": 2.17,
+      "implied_target": 195.063,
+      "current_price": 151.92,
+      "upside_pct": 28.4
     },
     {
-      "symbol": "301205",
-      "buy_count": 1,
-      "total_count": 1,
-      "buy_ratio": 1,
-      "consensus_eps_next": 1.28,
-      "implied_target": 4307.712,
-      "current_price": 316.02,
-      "upside_pct": 1263.11
+      "symbol": "002384",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "688498",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "300620",
@@ -140,26 +102,6 @@
       "implied_target": 216.089,
       "current_price": 278.78,
       "upside_pct": -22.49
-    },
-    {
-      "symbol": "600330",
-      "current_price": 32.73,
-      "buy_count": null,
-      "total_count": null,
-      "buy_ratio": null,
-      "consensus_eps_next": null,
-      "implied_target": null,
-      "upside_pct": null
-    },
-    {
-      "symbol": "002222",
-      "buy_count": 22,
-      "total_count": 22,
-      "buy_ratio": 1,
-      "consensus_eps_next": 0.7,
-      "implied_target": 112.63,
-      "current_price": 100.56,
-      "upside_pct": 12
     },
     {
       "symbol": "601138",
@@ -182,6 +124,16 @@
       "upside_pct": 35.92
     },
     {
+      "symbol": "000938",
+      "buy_count": 117,
+      "total_count": 121,
+      "buy_ratio": 0.967,
+      "consensus_eps_next": 1.005,
+      "implied_target": 38.742,
+      "current_price": 28.64,
+      "upside_pct": 35.27
+    },
+    {
       "symbol": "603019",
       "buy_count": 104,
       "total_count": 114,
@@ -192,14 +144,15 @@
       "upside_pct": 36.57
     },
     {
-      "symbol": "000938",
-      "buy_count": 117,
-      "total_count": 121,
-      "buy_ratio": 0.967,
-      "consensus_eps_next": 1.005,
-      "implied_target": 38.742,
-      "current_price": 28.64,
-      "upside_pct": 35.27
+      "symbol": "002837",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "301018",
@@ -222,54 +175,179 @@
       "upside_pct": 109.95
     },
     {
-      "symbol": "300602",
-      "buy_count": 41,
-      "total_count": 41,
+      "symbol": "002335",
+      "buy_count": 34,
+      "total_count": 34,
       "buy_ratio": 1,
-      "consensus_eps_next": 0.8,
-      "implied_target": 54.891,
-      "current_price": 45.3,
-      "upside_pct": 21.17
+      "consensus_eps_next": 2.03,
+      "implied_target": 138.762,
+      "current_price": 39.06,
+      "upside_pct": 255.25
     },
     {
-      "symbol": "600900",
-      "buy_count": 120,
-      "total_count": 124,
-      "buy_ratio": 0.968,
-      "consensus_eps_next": 1.497,
-      "implied_target": 28.17,
-      "current_price": 27.75,
-      "upside_pct": 1.51
+      "symbol": "002518",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
-      "symbol": "003816",
-      "buy_count": 60,
-      "total_count": 62,
-      "buy_ratio": 0.968,
-      "consensus_eps_next": 0.25,
-      "implied_target": 6.099,
-      "current_price": 4.58,
-      "upside_pct": 33.17
+      "symbol": "300274",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
-      "symbol": "600886",
-      "buy_count": 58,
-      "total_count": 61,
-      "buy_ratio": 0.951,
-      "consensus_eps_next": 1.06,
-      "implied_target": 16.323,
-      "current_price": 14.3,
-      "upside_pct": 14.15
+      "symbol": "300408",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
-      "symbol": "600011",
-      "buy_count": 97,
-      "total_count": 100,
-      "buy_ratio": 0.97,
-      "consensus_eps_next": 0.91,
-      "implied_target": 9.102,
-      "current_price": 8.87,
-      "upside_pct": 2.62
+      "symbol": "000636",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "300285",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "300153",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "000880",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "600875",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "601727",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "603308",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "688676",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "600089",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "601179",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "002028",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "300442",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "300383",
@@ -292,24 +370,35 @@
       "upside_pct": 49.38
     },
     {
-      "symbol": "300738",
-      "buy_count": 27,
-      "total_count": 27,
-      "buy_ratio": 1,
-      "consensus_eps_next": 0.32,
-      "implied_target": 39.58,
-      "current_price": 21.76,
-      "upside_pct": 81.89
+      "symbol": "600941",
+      "buy_count": 78,
+      "total_count": 80,
+      "buy_ratio": 0.975,
+      "consensus_eps_next": 7.3,
+      "implied_target": 115.431,
+      "current_price": 99.1,
+      "upside_pct": 16.48
     },
     {
-      "symbol": "002335",
-      "buy_count": 34,
-      "total_count": 34,
-      "buy_ratio": 1,
-      "consensus_eps_next": 2.03,
-      "implied_target": 138.762,
-      "current_price": 39.06,
-      "upside_pct": 255.25
+      "symbol": "601728",
+      "buy_count": 46,
+      "total_count": 47,
+      "buy_ratio": 0.979,
+      "consensus_eps_next": 0.42,
+      "implied_target": 7.342,
+      "current_price": 6.05,
+      "upside_pct": 21.36
+    },
+    {
+      "symbol": "600050",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "603290",
@@ -322,26 +411,6 @@
       "upside_pct": 293.34
     },
     {
-      "symbol": "688187",
-      "buy_count": 48,
-      "total_count": 48,
-      "buy_ratio": 1,
-      "consensus_eps_next": 3.55,
-      "implied_target": 71.032,
-      "current_price": 61,
-      "upside_pct": 16.45
-    },
-    {
-      "symbol": "688711",
-      "buy_count": 24,
-      "total_count": 25,
-      "buy_ratio": 0.96,
-      "consensus_eps_next": 0.965,
-      "implied_target": 411.505,
-      "current_price": 33.9,
-      "upside_pct": 1113.88
-    },
-    {
       "symbol": "605111",
       "buy_count": 94,
       "total_count": 94,
@@ -352,14 +421,14 @@
       "upside_pct": 82.14
     },
     {
-      "symbol": "600460",
-      "buy_count": 85,
-      "total_count": 87,
-      "buy_ratio": 0.977,
-      "consensus_eps_next": 0.495,
-      "implied_target": 62.117,
-      "current_price": 34.6,
-      "upside_pct": 79.53
+      "symbol": "688261",
+      "buy_count": 42,
+      "total_count": 42,
+      "buy_ratio": 1,
+      "consensus_eps_next": 1.555,
+      "implied_target": 405.508,
+      "current_price": 93.53,
+      "upside_pct": 333.56
     },
     {
       "symbol": "688396",
@@ -372,6 +441,27 @@
       "upside_pct": 42
     },
     {
+      "symbol": "600460",
+      "buy_count": 85,
+      "total_count": 87,
+      "buy_ratio": 0.977,
+      "consensus_eps_next": 0.495,
+      "implied_target": 62.117,
+      "current_price": 34.6,
+      "upside_pct": 79.53
+    },
+    {
+      "symbol": "300373",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
       "symbol": "600745",
       "current_price": 20.67,
       "buy_count": null,
@@ -382,14 +472,36 @@
       "upside_pct": null
     },
     {
-      "symbol": "603986",
-      "buy_count": 206,
-      "total_count": 221,
-      "buy_ratio": 0.932,
-      "consensus_eps_next": 3.14,
-      "implied_target": 357.646,
-      "current_price": 467.01,
-      "upside_pct": -23.42
+      "symbol": "688187",
+      "buy_count": 48,
+      "total_count": 48,
+      "buy_ratio": 1,
+      "consensus_eps_next": 3.55,
+      "implied_target": 71.032,
+      "current_price": 61,
+      "upside_pct": 16.45
+    },
+    {
+      "symbol": "688234",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "600703",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "688008",
@@ -402,14 +514,14 @@
       "upside_pct": 19.23
     },
     {
-      "symbol": "300223",
-      "buy_count": 87,
-      "total_count": 89,
-      "buy_ratio": 0.978,
-      "consensus_eps_next": 1.45,
-      "implied_target": 177.325,
-      "current_price": 157.46,
-      "upside_pct": 12.62
+      "symbol": "603986",
+      "buy_count": 206,
+      "total_count": 221,
+      "buy_ratio": 0.932,
+      "consensus_eps_next": 3.14,
+      "implied_target": 357.646,
+      "current_price": 467.01,
+      "upside_pct": -23.42
     },
     {
       "symbol": "301308",
@@ -422,14 +534,14 @@
       "upside_pct": -78.84
     },
     {
-      "symbol": "002156",
-      "buy_count": 117,
-      "total_count": 121,
-      "buy_ratio": 0.967,
-      "consensus_eps_next": 1.04,
-      "implied_target": 72.02,
-      "current_price": 66,
-      "upside_pct": 9.12
+      "symbol": "000021",
+      "current_price": 39.79,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null
     },
     {
       "symbol": "600584",
@@ -442,6 +554,16 @@
       "upside_pct": 84.12
     },
     {
+      "symbol": "002156",
+      "buy_count": 117,
+      "total_count": 121,
+      "buy_ratio": 0.967,
+      "consensus_eps_next": 1.04,
+      "implied_target": 72.02,
+      "current_price": 66,
+      "upside_pct": 9.12
+    },
+    {
       "symbol": "002185",
       "buy_count": 73,
       "total_count": 80,
@@ -450,6 +572,39 @@
       "implied_target": 30.979,
       "current_price": 19.34,
       "upside_pct": 60.18
+    },
+    {
+      "symbol": "688820",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "688362",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "000725",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "002371",
@@ -482,134 +637,15 @@
       "upside_pct": -4.41
     },
     {
-      "symbol": "688126",
-      "current_price": 27.7,
+      "symbol": "688120",
+      "current_price": null,
       "buy_count": null,
       "total_count": null,
       "buy_ratio": null,
       "consensus_eps_next": null,
       "implied_target": null,
-      "upside_pct": null
-    },
-    {
-      "symbol": "300476",
-      "buy_count": 77,
-      "total_count": 83,
-      "buy_ratio": 0.928,
-      "consensus_eps_next": 8.065,
-      "implied_target": 624.165,
-      "current_price": 368.52,
-      "upside_pct": 69.37
-    },
-    {
-      "symbol": "002463",
-      "buy_count": 166,
-      "total_count": 167,
-      "buy_ratio": 0.994,
-      "consensus_eps_next": 2.3,
-      "implied_target": 135.849,
-      "current_price": 132.04,
-      "upside_pct": 2.88
-    },
-    {
-      "symbol": "002916",
-      "buy_count": 153,
-      "total_count": 170,
-      "buy_ratio": 0.9,
-      "consensus_eps_next": 5.985,
-      "implied_target": 461.472,
-      "current_price": 411.41,
-      "upside_pct": 12.17
-    },
-    {
-      "symbol": "002938",
-      "buy_count": 109,
-      "total_count": 117,
-      "buy_ratio": 0.932,
-      "consensus_eps_next": 2.18,
-      "implied_target": 142.94,
-      "current_price": 105.01,
-      "upside_pct": 36.12
-    },
-    {
-      "symbol": "600183",
-      "buy_count": 135,
-      "total_count": 138,
-      "buy_ratio": 0.978,
-      "consensus_eps_next": 1.615,
-      "implied_target": 140.426,
-      "current_price": 140.62,
-      "upside_pct": -0.14
-    },
-    {
-      "symbol": "002436",
-      "buy_count": 92,
-      "total_count": 92,
-      "buy_ratio": 1,
-      "consensus_eps_next": 0.29,
-      "implied_target": 132.108,
-      "current_price": 38.68,
-      "upside_pct": 241.54
-    },
-    {
-      "symbol": "688261",
-      "buy_count": 42,
-      "total_count": 42,
-      "buy_ratio": 1,
-      "consensus_eps_next": 1.555,
-      "implied_target": 405.508,
-      "current_price": 93.53,
-      "upside_pct": 333.56
-    },
-    {
-      "symbol": "688019",
-      "buy_count": 42,
-      "total_count": 52,
-      "buy_ratio": 0.808,
-      "consensus_eps_next": 6.939,
-      "implied_target": 419.624,
-      "current_price": 284.23,
-      "upside_pct": 47.64
-    },
-    {
-      "symbol": "002409",
-      "buy_count": 59,
-      "total_count": 61,
-      "buy_ratio": 0.967,
-      "consensus_eps_next": 3.2,
-      "implied_target": 162.881,
-      "current_price": 107.67,
-      "upside_pct": 51.28
-    },
-    {
-      "symbol": "688981",
-      "buy_count": 97,
-      "total_count": 104,
-      "buy_ratio": 0.933,
-      "consensus_eps_next": 0.775,
-      "implied_target": 172.205,
-      "current_price": 139.91,
-      "upside_pct": 23.08
-    },
-    {
-      "symbol": "600941",
-      "buy_count": 78,
-      "total_count": 80,
-      "buy_ratio": 0.975,
-      "consensus_eps_next": 7.3,
-      "implied_target": 115.431,
-      "current_price": 99.1,
-      "upside_pct": 16.48
-    },
-    {
-      "symbol": "601728",
-      "buy_count": 46,
-      "total_count": 47,
-      "buy_ratio": 0.979,
-      "consensus_eps_next": 0.42,
-      "implied_target": 7.342,
-      "current_price": 6.05,
-      "upside_pct": 21.36
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     },
     {
       "symbol": "688082",
@@ -622,6 +658,70 @@
       "upside_pct": 64.73
     },
     {
+      "symbol": "688361",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "688037",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "002409",
+      "buy_count": 59,
+      "total_count": 61,
+      "buy_ratio": 0.967,
+      "consensus_eps_next": 3.2,
+      "implied_target": 162.881,
+      "current_price": 107.67,
+      "upside_pct": 51.28
+    },
+    {
+      "symbol": "300666",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "688019",
+      "buy_count": 42,
+      "total_count": 52,
+      "buy_ratio": 0.808,
+      "consensus_eps_next": 6.939,
+      "implied_target": 419.624,
+      "current_price": 284.23,
+      "upside_pct": 47.64
+    },
+    {
+      "symbol": "300054",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
       "symbol": "300346",
       "buy_count": 6,
       "total_count": 6,
@@ -632,8 +732,8 @@
       "upside_pct": 23
     },
     {
-      "symbol": "000021",
-      "current_price": 39.79,
+      "symbol": "688126",
+      "current_price": 27.7,
       "buy_count": null,
       "total_count": null,
       "buy_ratio": null,
@@ -642,14 +742,99 @@
       "upside_pct": null
     },
     {
-      "symbol": "002475",
-      "buy_count": 191,
-      "total_count": 207,
-      "buy_ratio": 0.923,
-      "consensus_eps_next": 2.89,
-      "implied_target": 89.64,
-      "current_price": 73.29,
-      "upside_pct": 22.31
+      "symbol": "688300",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "002463",
+      "buy_count": 166,
+      "total_count": 167,
+      "buy_ratio": 0.994,
+      "consensus_eps_next": 2.3,
+      "implied_target": 135.849,
+      "current_price": 132.04,
+      "upside_pct": 2.88
+    },
+    {
+      "symbol": "300476",
+      "buy_count": 77,
+      "total_count": 83,
+      "buy_ratio": 0.928,
+      "consensus_eps_next": 8.065,
+      "implied_target": 624.165,
+      "current_price": 368.52,
+      "upside_pct": 69.37
+    },
+    {
+      "symbol": "600183",
+      "buy_count": 135,
+      "total_count": 138,
+      "buy_ratio": 0.978,
+      "consensus_eps_next": 1.615,
+      "implied_target": 140.426,
+      "current_price": 140.62,
+      "upside_pct": -0.14
+    },
+    {
+      "symbol": "002916",
+      "buy_count": 153,
+      "total_count": 170,
+      "buy_ratio": 0.9,
+      "consensus_eps_next": 5.985,
+      "implied_target": 461.472,
+      "current_price": 411.41,
+      "upside_pct": 12.17
+    },
+    {
+      "symbol": "603228",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
+    },
+    {
+      "symbol": "002938",
+      "buy_count": 109,
+      "total_count": 117,
+      "buy_ratio": 0.932,
+      "consensus_eps_next": 2.18,
+      "implied_target": 142.94,
+      "current_price": 105.01,
+      "upside_pct": 36.12
+    },
+    {
+      "symbol": "688981",
+      "buy_count": 97,
+      "total_count": 104,
+      "buy_ratio": 0.933,
+      "consensus_eps_next": 0.775,
+      "implied_target": 172.205,
+      "current_price": 139.91,
+      "upside_pct": 23.08
+    },
+    {
+      "symbol": "688347",
+      "current_price": null,
+      "buy_count": null,
+      "total_count": null,
+      "buy_ratio": null,
+      "consensus_eps_next": null,
+      "implied_target": null,
+      "upside_pct": null,
+      "error": "external data unavailable in current refresh environment"
     }
-  ]
+  ],
+  "last_attempted_refresh_at": "2026-06-08T03:06:24.000Z",
+  "refresh_status": "pyserver unavailable; retained existing analyst data and filled missing symbols with nulls"
 }

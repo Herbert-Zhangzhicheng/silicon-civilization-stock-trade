@@ -1,6 +1,6 @@
 {
   "$schema_note": "硅基文明消费股 watchlist. Edit via UI or directly. Each entry: {symbol, name, theme, note?}.",
-  "updated_at": "2026-06-06",
+  "updated_at": "2026-06-08",
   "updated_by": "codex-silicon-life-curation",
   "entries": [
     {
@@ -400,6 +400,13 @@
       "name": "甬矽电子",
       "theme": "先进封装",
       "note": "布局 Fan-out、2.5D、垂直堆叠等多维异构先进封装",
+      "global_supply": false
+    },
+    {
+      "symbol": "000725",
+      "name": "京东方A",
+      "theme": "先进封装",
+      "note": "潜在玻璃基封装载板供应商，已建设试验线并向客户送样，仍处验证和产业化爬坡阶段",
       "global_supply": false
     },
     {

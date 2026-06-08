@@ -1349,5 +1349,7 @@
       "shares": 400,
       "price": 75
     }
-  ]
+  ],
+  "last_attempted_refresh_at": "2026-06-08T03:06:24.000Z",
+  "refresh_status": "pyserver unavailable; retained existing backtest snapshot"
 }

@@ -1,4 +1,24 @@
 {
-  "generated_at": "2026-05-30T02:20:51.711Z",
-  "universe_count": 65
+  "generated_at": "2026-06-08T03:06:24.000Z",
+  "universe_count": 80,
+  "external_data_status": {
+    "refresh_status": "pyserver 未运行且缺少 .env，无法刷新行情/分析师/信号/回测；股票池已更新，旧外部快照已按当前股票池补空值。",
+    "analyst": {
+      "snapshot_generated_at": "2026-05-30T02:20:51.094Z",
+      "items": 80,
+      "available_items": 47,
+      "missing_items": 33
+    },
+    "signals": {
+      "snapshot_generated_at": "2026-05-30T02:20:51.152Z",
+      "signals": 47,
+      "fundamentals": 80,
+      "missing_fundamentals": 33
+    },
+    "backtest": {
+      "snapshot_generated_at": "2026-05-30T02:20:51.257Z",
+      "equity_points": 192,
+      "trades": 53
+    }
+  }
 }
