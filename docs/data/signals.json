@@ -3,516 +3,596 @@
   "fundamentals": [
     {
       "symbol": "688041",
-      "pe_ttm": 250.587,
-      "pb": 29.0723,
-      "market_cap": 6831.22964945
+      "pe_ttm": 221.05,
+      "pb": 25.86,
+      "market_cap": 6075.355,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688256",
-      "pe_ttm": 302.9337,
-      "pb": 67.2502,
-      "market_cap": 8230.637893899999
+      "pe_ttm": 195.8,
+      "pb": 64.84,
+      "market_cap": 7935.34,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300308",
-      "pe_ttm": 86.4994,
-      "pb": 37.4117,
-      "market_cap": 12930.68396059
+      "pe_ttm": 56.2,
+      "pb": 37.21,
+      "market_cap": 12892.112,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300502",
-      "pe_ttm": 65.5099,
-      "pb": 34.4723,
-      "market_cap": 7035.51882126
+      "pe_ttm": 65.23,
+      "pb": 37.37,
+      "market_cap": 7254.417,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300394",
-      "pe_ttm": 163.3044,
-      "pb": 58.9927,
-      "market_cap": 3546.7398751100004
+      "pe_ttm": 168.98,
+      "pb": 60.86,
+      "market_cap": 3327.017,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002281",
-      "pe_ttm": 158.7944,
-      "pb": 15.9106,
-      "market_cap": 1645.2151962
+      "pe_ttm": 178.86,
+      "pb": 16.6,
+      "market_cap": 1716.525,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000988",
-      "pe_ttm": 89.8907,
-      "pb": 13.07,
-      "market_cap": 1527.55971247
+      "pe_ttm": 59.26,
+      "pb": 13.23,
+      "market_cap": 1513.382,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002384",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 88.29,
+      "pb": 17.31,
+      "market_cap": 3919.64,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688498",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 233.64,
+      "pb": 68.04,
+      "market_cap": 1676.983,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300620",
-      "pe_ttm": 329.9062,
-      "pb": 32.2373,
-      "market_cap": 694.6655233500001
+      "pe_ttm": 416.43,
+      "pb": 34.58,
+      "market_cap": 745.174,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "601138",
-      "pe_ttm": 35.832,
-      "pb": 8.2656,
-      "market_cap": 14565.56373646
+      "pe_ttm": 33.56,
+      "pb": 8.07,
+      "market_cap": 14222.261,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000977",
-      "pe_ttm": 37.1448,
-      "pb": 4.2667,
-      "market_cap": 949.0764621300001
+      "pe_ttm": 35.65,
+      "pb": 3.88,
+      "market_cap": 862.436,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000938",
-      "pe_ttm": 38.5492,
-      "pb": 5.2754,
-      "market_cap": 819.1268759100001
+      "pe_ttm": 23.74,
+      "pb": 4.88,
+      "market_cap": 748.197,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603019",
-      "pe_ttm": 58.2036,
-      "pb": 5.7225,
-      "market_cap": 1290.76074464
+      "pe_ttm": 127.11,
+      "pb": 5.27,
+      "market_cap": 1158.495,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002837",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 2345.91,
+      "pb": 24.62,
+      "market_cap": 812.398,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "301018",
-      "pe_ttm": 200.6327,
-      "pb": 13.8218,
-      "market_cap": 383.10368546
+      "pe_ttm": 300.92,
+      "pb": 12.6,
+      "market_cap": 340.708,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300499",
-      "pe_ttm": 381.8984,
-      "pb": 8.3744,
-      "market_cap": 116.60495145
+      "pe_ttm": 172.78,
+      "pb": 7.63,
+      "market_cap": 104.639,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002335",
-      "pe_ttm": 68.3558,
-      "pb": 4.685,
-      "market_cap": 291.91505022999996
+      "pe_ttm": 88.21,
+      "pb": 4.42,
+      "market_cap": 275.249,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002518",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 51.26,
+      "pb": 6.03,
+      "market_cap": 284.301,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300274",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 33.85,
+      "pb": 6.57,
+      "market_cap": 3101.939,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300408",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 75.62,
+      "pb": 11.11,
+      "market_cap": 2392.364,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000636",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 180.79,
+      "pb": 5.13,
+      "market_cap": 640.407,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300285",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 103.35,
+      "pb": 8.27,
+      "market_cap": 588.159,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300153",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 96.9,
+      "pb": 8.62,
+      "market_cap": 78.848,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000880",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 55.1,
+      "pb": 5.58,
+      "market_cap": 120.322,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600875",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 17.12,
+      "pb": 2.32,
+      "market_cap": 1085.579,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "601727",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 76.9,
+      "pb": 2.13,
+      "market_cap": 1170.171,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603308",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 86.15,
+      "pb": 8.14,
+      "market_cap": 414.083,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688676",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 87.62,
+      "pb": 8.11,
+      "market_cap": 394.035,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600089",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 16.92,
+      "pb": 1.71,
+      "market_cap": 1228.334,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "601179",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 52.35,
+      "pb": 3.11,
+      "market_cap": 725.825,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002028",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 63.61,
+      "pb": 8.68,
+      "market_cap": 1399.336,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300442",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 52.64,
+      "pb": 8.58,
+      "market_cap": 1225.921,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300383",
-      "pe_ttm": null,
-      "pb": 2.0755,
-      "market_cap": 245.5511829
+      "pe_ttm": 251.45,
+      "pb": 1.91,
+      "market_cap": 225.957,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603881",
-      "pe_ttm": 182.3505,
-      "pb": 7.5573,
-      "market_cap": 254.30545765
+      "pe_ttm": 137.73,
+      "pb": 7.33,
+      "market_cap": 246.691,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600941",
-      "pe_ttm": 15.8124,
-      "pb": 1.5093,
-      "market_cap": 21474.19143472
+      "pe_ttm": 17.99,
+      "pb": 1.49,
+      "market_cap": 21120.086,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "601728",
-      "pe_ttm": 17.4805,
-      "pb": 1.1821,
-      "market_cap": 5536.18189129
+      "pe_ttm": 19.2,
+      "pb": 1.23,
+      "market_cap": 5645.99,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600050",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 15.8,
+      "pb": 0.79,
+      "market_cap": 1350.623,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603290",
-      "pe_ttm": 93.9195,
-      "pb": 4.4256,
-      "market_cap": 308.20235074
+      "pe_ttm": 243.46,
+      "pb": 3.72,
+      "market_cap": 259.302,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "605111",
-      "pe_ttm": 72.8216,
-      "pb": 6.3719,
-      "market_cap": 276.65302288000004
+      "pe_ttm": 62.51,
+      "pb": 5.44,
+      "market_cap": 236.407,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688261",
-      "pe_ttm": 260.7771,
-      "pb": 3.889,
-      "market_cap": 114.64437412000001
+      "pe_ttm": 403.7,
+      "pb": 3.04,
+      "market_cap": 89.749,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688396",
-      "pe_ttm": 93.8193,
-      "pb": 3.6775,
-      "market_cap": 851.25022481
+      "pe_ttm": 64.06,
+      "pb": 3.65,
+      "market_cap": 845.539,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600460",
-      "pe_ttm": 125.4885,
-      "pb": 4.7206,
-      "market_cap": 575.76885837
+      "pe_ttm": 64.66,
+      "pb": 4.43,
+      "market_cap": 540.158,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300373",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 33.78,
+      "pb": 5.4,
+      "market_cap": 520.093,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600745",
-      "pe_ttm": null,
-      "pb": 1.1252,
-      "market_cap": 257.27332662
+      "pe_ttm": -33.75,
+      "pb": 1.12,
+      "market_cap": 255.531,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688187",
-      "pe_ttm": 20.0091,
-      "pb": 1.9059,
-      "market_cap": 822.09871532
+      "pe_ttm": 27.7,
+      "pb": 1.65,
+      "market_cap": 712.935,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688234",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": -245.81,
+      "pb": 8.36,
+      "market_cap": 594.966,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600703",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 306.95,
+      "pb": 2.37,
+      "market_cap": 828.676,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688008",
-      "pe_ttm": 120.9002,
-      "pb": 14.8336,
-      "market_cap": 3092.16605313
+      "pe_ttm": 82.01,
+      "pb": 13.34,
+      "market_cap": 2779.894,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603986",
-      "pe_ttm": 113.9001,
-      "pb": 13.2303,
-      "market_cap": 3274.21855642
+      "pe_ttm": 57.34,
+      "pb": 13.54,
+      "market_cap": 3351.48,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "301308",
-      "pe_ttm": 42.8939,
-      "pb": 18.923,
-      "market_cap": 2332.29302549
+      "pe_ttm": 13.41,
+      "pb": 17.4,
+      "market_cap": 2071.307,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000021",
-      "pe_ttm": 52.2469,
-      "pb": 4.6885,
-      "market_cap": 626.40305958
+      "pe_ttm": 58.33,
+      "pb": 4.34,
+      "market_cap": 565.041,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600584",
-      "pe_ttm": 88.8671,
-      "pb": 5.104,
-      "market_cap": 1468.21465469
+      "pe_ttm": 109.67,
+      "pb": 4.43,
+      "market_cap": 1273.347,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002156",
-      "pe_ttm": 69.2499,
-      "pb": 6.4472,
-      "market_cap": 1001.6139619200001
+      "pe_ttm": 72.3,
+      "pb": 6.13,
+      "market_cap": 951.685,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002185",
-      "pe_ttm": 77.4467,
-      "pb": 3.5262,
-      "market_cap": 631.82884171
+      "pe_ttm": 162.94,
+      "pb": 3.17,
+      "market_cap": 565.647,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688820",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 405.24,
+      "pb": 16.12,
+      "market_cap": 3101.333,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688362",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 205.77,
+      "pb": 6.5,
+      "market_cap": 218.997,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "000725",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 34.93,
+      "pb": 1.75,
+      "market_cap": 2385.655,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002371",
-      "pe_ttm": 81.8774,
-      "pb": 11.6187,
-      "market_cap": 4565.5031984
+      "pe_ttm": 64.64,
+      "pb": 10.76,
+      "market_cap": 4227.079,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688012",
-      "pe_ttm": 102.2098,
-      "pb": 11.5092,
-      "market_cap": 2789.1811877
+      "pe_ttm": 67.34,
+      "pb": 10.34,
+      "market_cap": 2506.403,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688072",
-      "pe_ttm": 107.9687,
-      "pb": 24.4961,
-      "market_cap": 1775.28384606
+      "pe_ttm": 69.68,
+      "pb": 22.16,
+      "market_cap": 1590.487,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688120",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 85.27,
+      "pb": 11.13,
+      "market_cap": 843.531,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688082",
-      "pe_ttm": 88.1532,
-      "pb": 8.0326,
-      "market_cap": 1105.33945649
+      "pe_ttm": 280.77,
+      "pb": 8.51,
+      "market_cap": 1171.262,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688361",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": -250.97,
+      "pb": 13.45,
+      "market_cap": 682.258,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688037",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 3357.35,
+      "pb": 16.82,
+      "market_cap": 471.223,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002409",
-      "pe_ttm": 50.9003,
-      "pb": 6.3254,
-      "market_cap": 512.4313309
+      "pe_ttm": 47.79,
+      "pb": 6.41,
+      "market_cap": 509.814,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300666",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 62.48,
+      "pb": 10.32,
+      "market_cap": 524.221,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688019",
-      "pe_ttm": 60.4732,
-      "pb": 10.8396,
-      "market_cap": 497.38657175000003
+      "pe_ttm": 55.21,
+      "pb": 10.19,
+      "market_cap": 458.625,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300054",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 62.45,
+      "pb": 11.48,
+      "market_cap": 626.936,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300346",
-      "pe_ttm": 102.2464,
-      "pb": 10.4569,
-      "market_cap": 356.22226781
+      "pe_ttm": 80.76,
+      "pb": 11.78,
+      "market_cap": 401.217,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688126",
-      "pe_ttm": null,
-      "pb": 5.4386,
-      "market_cap": 915.4914798599999
+      "pe_ttm": -46.47,
+      "pb": 5.33,
+      "market_cap": 897.975,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688300",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 133.6,
+      "pb": 23.12,
+      "market_cap": 382.825,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002463",
-      "pe_ttm": 59.065,
-      "pb": 16.0537,
-      "market_cap": 2540.9296142499998
+      "pe_ttm": 52.47,
+      "pb": 16.47,
+      "market_cap": 2606.743,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "300476",
-      "pe_ttm": 77.3918,
-      "pb": 10.144,
-      "market_cap": 3621.75859287
+      "pe_ttm": 60.7,
+      "pb": 19.97,
+      "market_cap": 3128.499,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "600183",
-      "pe_ttm": 86.9511,
-      "pb": 19.0533,
-      "market_cap": 3415.82746123
+      "pe_ttm": 71.32,
+      "pb": 20.67,
+      "market_cap": 3304.088,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002916",
-      "pe_ttm": 77.1047,
-      "pb": 17.0299,
-      "market_cap": 2802.38748849
+      "pe_ttm": 75.24,
+      "pb": 15.55,
+      "market_cap": 2558.802,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "603228",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 74.17,
+      "pb": 5.41,
+      "market_cap": 690.286,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "002938",
-      "pe_ttm": 65.5686,
-      "pb": 7.0251,
-      "market_cap": 2434.1853719
+      "pe_ttm": 140.48,
+      "pb": 8.04,
+      "market_cap": 2600.276,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688981",
-      "pe_ttm": 222.1994,
-      "pb": 7.4838,
-      "market_cap": 11211.22612042
+      "pe_ttm": 180.81,
+      "pb": 6.57,
+      "market_cap": 9844.578,
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     },
     {
       "symbol": "688347",
-      "pe_ttm": null,
-      "pb": null,
-      "market_cap": null,
-      "error": "external data unavailable in current refresh environment"
+      "pe_ttm": 679.82,
+      "pb": 8.39,
+      "market_cap": 3795.09,
+      "error": "external data unavailable in current refresh environment",
+      "quote_updated_at": "2026-06-08T03:39:37Z"
     }
   ],
   "signals": [
@@ -846,6 +926,6 @@
       "rationale": "存储封测，PE合理，受益HBM扩产，股价突破。"
     }
   ],
-  "last_attempted_refresh_at": "2026-06-08T03:06:24.000Z",
-  "refresh_status": "pyserver and DeepSeek env unavailable; retained existing signals only"
+  "last_attempted_refresh_at": "2026-06-08T03:39:37Z",
+  "refresh_status": "updated PE/PB/market-cap fundamentals from Eastmoney quotes; retained existing DeepSeek signals"
 }

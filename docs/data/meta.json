@@ -1,19 +1,20 @@
 {
-  "generated_at": "2026-06-08T03:06:24.000Z",
+  "generated_at": "2026-06-08T03:39:37Z",
   "universe_count": 80,
   "external_data_status": {
-    "refresh_status": "pyserver 未运行且缺少 .env，无法刷新行情/分析师/信号/回测；股票池已更新，旧外部快照已按当前股票池补空值。",
+    "refresh_status": "已用东方财富公开行情与盈利预测数据更新现价、目标价、上行空间和买入评级统计；DeepSeek 信号和回测未刷新。",
     "analyst": {
-      "snapshot_generated_at": "2026-05-30T02:20:51.094Z",
+      "snapshot_generated_at": "2026-06-08T03:39:37Z",
       "items": 80,
-      "available_items": 47,
-      "missing_items": 33
+      "quote_items": 80,
+      "target_items": 68,
+      "source": "东方财富实时行情；东方财富盈利预测/评级统计"
     },
     "signals": {
       "snapshot_generated_at": "2026-05-30T02:20:51.152Z",
       "signals": 47,
       "fundamentals": 80,
-      "missing_fundamentals": 33
+      "quote_fundamentals_updated": 80
     },
     "backtest": {
       "snapshot_generated_at": "2026-05-30T02:20:51.257Z",
