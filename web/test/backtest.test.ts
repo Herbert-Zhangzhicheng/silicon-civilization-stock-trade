@@ -70,6 +70,39 @@ test("backtest buys the up-trending symbol", async () => {
   assert.ok(buys.every((t) => t.symbol === "A"), "should only buy A (up trender)");
 });
 
+test("maxPositions caps the total portfolio, not just each rebalance batch", async () => {
+  const symbols = ["A", "B", "C"];
+  const series: SymbolSeries[] = symbols.map((symbol) => ({
+    entry: { symbol, name: symbol, theme: "T" },
+    klines: makeKlines("2025-01-01", Array.from({ length: 40 }, () => 10)),
+  }));
+  let call = 0;
+  const rotatingBuys: Scorer = async (snapshots) => {
+    call++;
+    return snapshots.map((snapshot) => ({
+      symbol: snapshot.symbol,
+      action: call === 1 && snapshot.symbol === "C" ? "hold" : "buy",
+      confidence: 1,
+      size: 1,
+      rationale: "test",
+    }));
+  };
+  const result = await runBacktest(
+    series,
+    { ...cfg, maxPositions: 2 },
+    { scorer: rotatingBuys },
+  );
+  const held: Record<string, number> = {};
+  let peak = 0;
+  for (const trade of result.trades) {
+    held[trade.symbol] = (held[trade.symbol] ?? 0)
+      + (trade.side === "buy" ? trade.shares : -trade.shares);
+    peak = Math.max(peak, Object.values(held).filter((shares) => shares > 0).length);
+  }
+  assert.equal(peak, 2);
+  assert.equal(held.C ?? 0, 0, "C must not open while A and B occupy both slots");
+});
+
 test("equity is monotonically tracking the chosen asset (no losses on uptrend)", async () => {
   const r = await runBacktest(makeSeries(), cfg, { scorer });
   const start = r.equityCurve[0].equity;

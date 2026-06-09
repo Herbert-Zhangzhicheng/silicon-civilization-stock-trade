@@ -239,14 +239,21 @@ export async function runBacktest(
       // Rank buys by confidence*size, cap at maxPositions. 涨停 names are
       // unfillable (no sellers), so drop them here and let a tradable name
       // take the slot rather than reserving cash for an order that can't fill.
-      const buys = signals
+      const rankedBuys = signals
         .filter((s) => {
           if (s.action !== "buy" || s.size <= 0) return false;
           const j = symbolIndex.get(s.symbol);
           return !(j !== undefined && atLimitUp(j, date, prices[s.symbol]));
         })
-        .sort((a, b) => b.confidence * b.size - a.confidence * a.size)
-        .slice(0, cfg.maxPositions);
+        .sort((a, b) => b.confidence * b.size - a.confidence * a.size);
+      const heldSymbols = new Set(symbols.filter((s) => (shares[s] ?? 0) > 0));
+      let availableSlots = Math.max(0, cfg.maxPositions - heldSymbols.size);
+      const buys = rankedBuys.filter((s) => {
+        if (heldSymbols.has(s.symbol)) return true;
+        if (availableSlots <= 0) return false;
+        availableSlots--;
+        return true;
+      });
 
       const totalWeight = buys.reduce((sum, s) => sum + s.size * s.confidence, 0) || 1;
       const budget = cash;

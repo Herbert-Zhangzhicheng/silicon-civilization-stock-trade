@@ -2,7 +2,7 @@
 // No build step, no framework — just fetch + DOM.
 
 const $ = (sel) => document.querySelector(sel);
-const BUILD_REVISION = "2026-06-08-analyst-v4";
+const BUILD_REVISION = "2026-06-10-full-refresh-v5";
 const fmt = {
   num: (v, digits = 2) => (v == null || Number.isNaN(v) ? "无" : v.toFixed(digits)),
   pct: (v, digits = 1) => (v == null || Number.isNaN(v) ? "无" : `${v > 0 ? "+" : ""}${v.toFixed(digits)}%`),

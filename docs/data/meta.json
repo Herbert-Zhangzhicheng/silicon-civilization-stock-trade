@@ -1,25 +1,31 @@
 {
-  "generated_at": "2026-06-08T03:39:37Z",
+  "generated_at": "2026-06-09T16:44:36.218Z",
   "universe_count": 80,
   "external_data_status": {
-    "refresh_status": "已用东方财富公开行情与盈利预测数据更新现价、目标价、上行空间和买入评级统计；DeepSeek 信号和回测未刷新。",
+    "refresh_status": "现价来自腾讯行情，盈利预测来自同花顺，评级/目标价来自东方财富研报；DeepSeek 信号和一年期回测已刷新并缓存。",
     "analyst": {
-      "snapshot_generated_at": "2026-06-08T03:39:37Z",
+      "snapshot_generated_at": "2026-06-09T16:40:35.504873Z",
       "items": 80,
       "quote_items": 80,
-      "target_items": 68,
-      "source": "东方财富实时行情；东方财富盈利预测/评级统计"
+      "target_items": 73,
+      "rating_items": 73,
+      "source": "腾讯行情；同花顺盈利预测；东方财富近180日研报"
     },
     "signals": {
-      "snapshot_generated_at": "2026-05-30T02:20:51.152Z",
-      "signals": 47,
-      "fundamentals": 80,
-      "quote_fundamentals_updated": 80
+      "snapshot_generated_at": "2026-06-09T16:44:36.218Z",
+      "signals": 79,
+      "model": "deepseek-v4-flash",
+      "market_data_date": "2026-06-09",
+      "cache_file": "web/.cache/deepseek-refresh.json"
     },
     "backtest": {
-      "snapshot_generated_at": "2026-05-30T02:20:51.257Z",
-      "equity_points": 192,
-      "trades": 53
+      "snapshot_generated_at": "2026-06-09T16:44:36.218Z",
+      "model": "deepseek-v4-flash",
+      "window": "2025-06-09..2026-06-09",
+      "equity_points": 244,
+      "trades": 170,
+      "rebalance_every_n_days": 5,
+      "max_positions": 10
     }
   }
 }

@@ -7,6 +7,7 @@
 //
 // Env overrides:
 //   SNAPSHOT_BACKTEST_START=2024-01-01  SNAPSHOT_BACKTEST_END=2026-05-14
+//   SNAPSHOT_REBALANCE_DAYS=5  SNAPSHOT_MAX_POSITIONS=10
 //   SNAPSHOT_SKIP_SIGNALS=1  SNAPSHOT_SKIP_BACKTEST=1
 //   SNAPSHOT_ONLY_SOCIAL_CARD=1  # rebuild social-card assets from docs/data/backtest.json
 import fs from "node:fs";
@@ -69,7 +70,7 @@ function socialCardSvg(bt: SnapshotBacktest): string {
     <path d="M164 0v630M344 0v630M524 0v630M704 0v630M884 0v630M1064 0v630"/>
   </g>
   <rect x="74" y="70" width="1052" height="490" rx="34" fill="#181a1f" fill-opacity=".68" stroke="#f2f4f1" stroke-opacity=".14" stroke-width="2"/>
-  <text x="112" y="150" fill="#f2b84b" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700">DeepSeek · Tushare · A股股票池</text>
+  <text x="112" y="150" fill="#f2b84b" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="28" font-weight="700">DeepSeek · 腾讯行情 · 同花顺 · 东方财富</text>
   <text x="112" y="252" fill="#f2f4f1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="84" font-weight="850">硅基文明消费股</text>
   <text x="112" y="352" fill="#f2f4f1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="84" font-weight="850">交易系统</text>
   <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif">
@@ -257,11 +258,11 @@ async function main() {
 
     const cfg = {
       startCash: 1_000_000,
-      rebalanceEveryNDays: 10,
+      rebalanceEveryNDays: Math.max(1, Number(process.env.SNAPSHOT_REBALANCE_DAYS ?? 5)),
       startDate,
       endDate,
       feeBps: 10,
-      maxPositions: 6,
+      maxPositions: Math.max(1, Number(process.env.SNAPSHOT_MAX_POSITIONS ?? 10)),
     };
     const result = await runBacktest(series, cfg, (p) => {
       if (p.done === p.total || p.done % 5 === 0) {
